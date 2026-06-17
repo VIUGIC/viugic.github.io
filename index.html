@@ -15,9 +15,10 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-    <link rel="icon" href="data:,">
+  <link rel="icon" href="data:,">
 
   <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script defer src="./static/js/dataset-lightbox.js"></script>
 </head>
 <body>
 
@@ -66,35 +67,37 @@
             </div>
 
             <div class="is-size-6 publication-authors">
-            <span class="author-block"><sup>†</sup>Equal Contribution,</span>
-            <span class="author-block"><sup>*</sup>Corresponding author</span>
-  
+              <span class="author-block"><sup>†</sup>Equal Contribution,</span>
+              <span class="author-block"><sup>*</sup>Corresponding author</span>
             </div>
 
-            <div class="is-size-5 publication-venue">
-            🎉 Accepted to IROS 2026
+            <div style="width: 100%; display: flex; justify-content: center; margin-top: 0.75rem;">
+              <span style="color: #555; font-weight: 700;">
+                Accepted to IROS 2026
+              </span>
             </div>
+
 
             
           <div class="publication-links">
             <span class="link-block">
               <a href="#" class="external-link button is-normal is-rounded is-dark">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>Paper (comming soon)</span>
+                <span>Paper (TBD)</span>
               </a>
             </span>
             <span class="link-block">
               <a href="https://github.com/jeongeun980906/Transparent_object_icp"
                  class="external-link button is-normal is-rounded is-dark">
                 <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Code (comming soon)</span>
+                <span>Code (TBD)</span>
               </a>
             </span>
             <span class="link-block">
               <a href="https://huggingface.co/datasets/adfa5456/Final_Dataset"
                  class="external-link button is-normal is-rounded is-dark">
                 <span class="icon"><i class="far fa-images"></i></span>
-                <span>Data (comming soon)</span>
+                <span>Data (TBD)</span>
               </a>
             </span>
           </div>
@@ -288,7 +291,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{anonymous2026viugic,
+    <pre><code>@inproceedings{park2026viugic,
   title  = {Pose Estimation of Transparent Objects via Depth Completion and Confidence-Guided Registration},
   author = {Jeongeun Park, Yeoncheol Jang, Changjin Kim, YoungJoon Yoo, Sungjoon Choi},
   year   = {2026}
@@ -317,6 +320,14 @@
     </div>
   </div>
 </footer>
+
+<dialog class="image-lightbox" id="image-lightbox" aria-label="Image preview">
+  <button class="image-lightbox__close" type="button" aria-label="Close image preview">&times;</button>
+  <div class="image-lightbox__content">
+    <img id="image-lightbox-img" src="" alt="">
+    <p id="image-lightbox-caption"></p>
+  </div>
+</dialog>
 
 </body>
 </html>
